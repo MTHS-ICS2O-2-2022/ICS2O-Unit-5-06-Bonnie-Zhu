@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Age checker" />
+  <meta name="keywords" content="mths, ics2o" />
+  <meta name="author" content="Bonnie Zhu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="icon" href="./images/download (3).png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <title>Multiplication Program</title>
+</head>
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Multiplication Program</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">Enter two numbers in the spaces below:</div>
+      <br />
+      <!-- Numeric Textfield -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number-1" />
+          <label class="mdl-textfield__label" for="number1">Number1...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+      </form>
+      <!-- Numeric Textfield -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number-2" />
+          <label class="mdl-textfield__label" for="number2">Number2...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+      </form>
+      <br />
+      <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        onclick="doMathClicked()">
+        Submit
+      </button>
+      <br />
+      <br />
+      <div id="number-entered"></div>
+      <div class="right-image">
+        <img src="./images/download (4).jpeg" alt="image" />
+      </div>
+    </main>
+  </div>
+</body>
 </html>
